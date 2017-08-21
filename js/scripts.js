@@ -26,13 +26,13 @@ $(document).ready(function() {
     $('ul#contacts').append('<li><span class="contact">' + newContact.cityCountry() + '</span></li>');
 
     $(".contact").last().click(function() {
-     $("#show-contact").show();
-     $("#show-contact h2").text(newContact.cityCountry);
-     $(".city").text(newContact.city);
-     $(".country").text(newContact.country);
-     $(".year").text(newContact.year);
-     $(".length").text(newContact.length);
-     $(".notes").text(newContact.notes);
+      $("#show-contact").show();
+      $("#show-contact h2").text(newContact.cityCountry());
+      $(".city").text(newContact.city);
+      $(".country").text(newContact.country);
+      $(".year").text(newContact.year);
+      $(".length").text(newContact.length);
+      $(".notes").text(newContact.notes);
    });
 
     $('input#new-city').val('');
